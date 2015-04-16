@@ -12,7 +12,8 @@ require.config({
     paths : {
         "jquery" : ["http://libs.baidu.com/jquery/2.0.3/jquery", "jquery-1.11"],
         //"mode01" : "module/mode-01"
-        "mode02" : "module/mode-02"
+        "mode02" : "module/mode-02",
+        "mode03" : "module/mode-03"
     }
 });
 
@@ -22,6 +23,7 @@ require.config({
     });
 });*/
 
-require(["jquery", "mode02"], function(jQuery){
+//mode2和mode03依赖于jquery
+require(["jquery", "mode02", "mode03"], function(jQuery){
     //todo
 });

@@ -8,10 +8,10 @@
   要使用jquery对象，则该模块依赖于jquery
  */
 define(["jquery"], function(){
-   function show(){
-      // alert("Hello World");
-       console.log("Hello World");
-       jQuery("#info").html("Hello World");
-   }
-    show();
+  jQuery(function(){
+      jQuery("table").hide();
+      jQuery("input[name=show]").on("click", function(){
+          jQuery("table").toggle();
+      });
+  });
 });
