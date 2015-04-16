@@ -16,6 +16,6 @@ var module1 = (function(){
 
     return {
         getUsername: getUsername,
-        getAge: getAge()
+        getAge: getAge
     };
 })();
